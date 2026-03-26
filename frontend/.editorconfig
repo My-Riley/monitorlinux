@@ -1,0 +1,29 @@
+# EditorConfig 配置文件
+# 告诉 EditorConfig 插件，这是根文件，无需继续向上查找
+root = true
+
+# 匹配所有文件
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Markdown 文件特殊配置（保留末尾空格用于换行格式）
+[*.md]
+insert_final_newline = false
+trim_trailing_whitespace = false
+
+# JSON 文件（保持 2 空格缩进）
+[*.json]
+indent_size = 2
+
+# YAML 文件
+[*.{yml,yaml}]
+indent_size = 2
+
+# Makefile 使用 tab 缩进
+[Makefile]
+indent_style = tab

@@ -1,0 +1,21 @@
+/* 隐藏滚动条但仍然允许滚动 */
+::-webkit-scrollbar {
+    width: 0;  /* 隐藏滚动条宽度 */
+    height: 0; /* 隐藏滚动条高度 */
+}
+
+/* 隐藏火狐浏览器的滚动条 */
+body {
+    scrollbar-width: none; /* 隐藏滚动条 */
+    -ms-overflow-style: none; /* 隐藏IE和Edge的滚动条 */
+}
+
+/* 隐藏IE和Edge的滚动条 */
+body::-ms-scrollbar {
+    display: none;
+}
+
+/* 隐藏其他浏览器的滚动条 */
+body {
+    overflow: -moz-scrollbars-none;
+}
